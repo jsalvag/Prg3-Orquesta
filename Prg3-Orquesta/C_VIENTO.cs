@@ -14,5 +14,10 @@ namespace Prg3_Orquesta
         {
             return this.nombre;
         }
+
+        public virtual string Tocar()
+        {
+            return this.nombre;
+        }
     }
 }

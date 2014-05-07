@@ -15,101 +15,7 @@ namespace Prg3_Orquesta
             InitializeComponent();
             pan1.Dock = System.Windows.Forms.DockStyle.Fill;
             pan2.Dock = System.Windows.Forms.DockStyle.Fill;
-            AddInstrumentos();
             ClrPan1();
-        }
-
-        private void AddInstrumentos()
-        {
-            ///CUERDA
-            ///FORTADA
-            ///Violines primeros
-            orq.AddCuerda(new C_CUERDA_INSTRUMENTOS("Frotada", "Violín", "Sonido de Violin", 1, 1));
-            orq.AddCuerda(new C_CUERDA_INSTRUMENTOS("Frotada", "Violín", "Sonido de Violin", 1, 2));
-            orq.AddCuerda(new C_CUERDA_INSTRUMENTOS("Frotada", "Violín", "Sonido de Violin", 1, 3));
-            orq.AddCuerda(new C_CUERDA_INSTRUMENTOS("Frotada", "Violín", "Sonido de Violin", 1, 4));
-            orq.AddCuerda(new C_CUERDA_INSTRUMENTOS("Frotada", "Violín", "Sonido de Violin", 1, 5));
-            orq.AddCuerda(new C_CUERDA_INSTRUMENTOS("Frotada", "Violín", "Sonido de Violin", 1, 6));
-            ///Violines segundos
-            orq.AddCuerda(new C_CUERDA_INSTRUMENTOS("Frotada", "Violín", "Sonido de Violin", 2, 1));
-            orq.AddCuerda(new C_CUERDA_INSTRUMENTOS("Frotada", "Violín", "Sonido de Violin", 2, 2));
-            orq.AddCuerda(new C_CUERDA_INSTRUMENTOS("Frotada", "Violín", "Sonido de Violin", 2, 3));
-            orq.AddCuerda(new C_CUERDA_INSTRUMENTOS("Frotada", "Violín", "Sonido de Violin", 2, 4));
-            ///Violas
-            orq.AddCuerda(new C_CUERDA_INSTRUMENTOS("Frotada", "Viola", "Sonido de Viola", 3, 1));
-            orq.AddCuerda(new C_CUERDA_INSTRUMENTOS("Frotada", "Viola", "Sonido de Viola", 3, 2));
-            orq.AddCuerda(new C_CUERDA_INSTRUMENTOS("Frotada", "Viola", "Sonido de Viola", 3, 3));
-            ///Violonchelos
-            orq.AddCuerda(new C_CUERDA_INSTRUMENTOS("Frotada", "Violonchelo", "Sonido de Violonchelo", 4, 1));
-            orq.AddCuerda(new C_CUERDA_INSTRUMENTOS("Frotada", "Violonchelo", "Sonido de Violonchelo", 4, 2));
-            ///Contrabajos
-            orq.AddCuerda(new C_CUERDA_INSTRUMENTOS("Frotada", "Contrabajo", "Sonido de Contrabajo", 5, 1));
-            ///PULSADA
-            ///Guitarra
-            orq.AddCuerda(new C_CUERDA_INSTRUMENTOS("Pulsada", "Guitarra", "Sonido de Guitarra", 0, 1));
-            ///Arpa
-            orq.AddCuerda(new C_CUERDA_INSTRUMENTOS("Pulsada", "Arpa", "Sonido de Arpa", 14, 1));
-            ///PERCUTIDA
-            ///Piano
-            orq.AddCuerda(new C_CUERDA_INSTRUMENTOS("Percutida", "Piano", "Sonido de Piano", 0, 2));
-
-            ///VIENTO
-            ///MADERA
-            ///Flauta travesera
-            orq.AddViento(new C_VIENTO_INSTRUMENTOS("Madera", "Flauta travesera", "Sonido de Flauta travesera", 6, 1));
-            orq.AddViento(new C_VIENTO_INSTRUMENTOS("Madera", "Flauta travesera", "Sonido de Flauta travesera", 6, 2));
-            ///Clarinetes
-            orq.AddViento(new C_VIENTO_INSTRUMENTOS("Madera", "Clarinete", "Sonido de clarinete", 7, 1));
-            orq.AddViento(new C_VIENTO_INSTRUMENTOS("Madera", "Clarinete", "Sonido de clarinete", 7, 2));
-            ///Oboe
-            orq.AddViento(new C_VIENTO_INSTRUMENTOS("Madera", "Oboe", "Sonido de Oboe", 8, 1));
-            orq.AddViento(new C_VIENTO_INSTRUMENTOS("Madera", "Oboe", "Sonido de Oboe", 8, 2));
-            ///Fagot
-            orq.AddViento(new C_VIENTO_INSTRUMENTOS("Madera", "Fagot", "Sonido de Fagot", 9, 1));
-            orq.AddViento(new C_VIENTO_INSTRUMENTOS("Madera", "Fagot", "Sonido de Fagot", 9, 2));
-            ///Saxofón
-            orq.AddViento(new C_VIENTO_INSTRUMENTOS("Madera", "Saxofón", "Sonido de Saxofón", 0, 3));
-            ///Corno inglés
-            orq.AddViento(new C_VIENTO_INSTRUMENTOS("Madera", "Corno inglés", "Sonido de Corno inglés", 0, 4));
-            ///METAL
-            ///Trompeta
-            orq.AddViento(new C_VIENTO_INSTRUMENTOS("Metal", "Trompeta", "Sonido de Trompeta", 10, 1));
-            orq.AddViento(new C_VIENTO_INSTRUMENTOS("Metal", "Trompeta", "Sonido de Trompeta", 10, 2));
-            ///Trombón de varas
-            orq.AddViento(new C_VIENTO_INSTRUMENTOS("Metal", "Trombón de varas", "Sonido de Trombón de varas", 11, 1));
-            orq.AddViento(new C_VIENTO_INSTRUMENTOS("Metal", "Trombón de varas", "Sonido de Trombón de varas", 11, 2));
-            ///Tuba
-            orq.AddViento(new C_VIENTO_INSTRUMENTOS("Metal", "Tuba", "Sonido de Tuba", 11, 3));
-            orq.AddViento(new C_VIENTO_INSTRUMENTOS("Metal", "Tuba", "Sonido de Tuba", 11, 4));
-            ///Trompa
-            orq.AddViento(new C_VIENTO_INSTRUMENTOS("Metal", "Trompa", "Sonido de Trompa", 12, 1));
-            orq.AddViento(new C_VIENTO_INSTRUMENTOS("Metal", "Trompa", "Sonido de Trompa", 12, 2));
-            
-            ///PERCUCION
-            ///PERCUCION AFINADA
-            ///Timbales
-            orq.AddPerc(new C_PERCUSION_INSTRUMENTOS("Afinada", "Timbales", "Sonido de Timbales", 13, 1));
-            ///Xilófono
-            orq.AddPerc(new C_PERCUSION_INSTRUMENTOS("Afinada", "Xilófono", "Sonido de Xilófono", 13, 2));
-            ///Metalófono
-            orq.AddPerc(new C_PERCUSION_INSTRUMENTOS("Afinada", "Metalófono", "Sonido de Metalófono", 13, 3));
-            ///Marimba
-            orq.AddPerc(new C_PERCUSION_INSTRUMENTOS("Afinada", "Marimba", "Sonido de Marimba", 13, 4));
-            ///PERCUCION NO AFINADA
-            ///Maracas
-            orq.AddPerc(new C_PERCUSION_INSTRUMENTOS("No Afinada", "Maracas", "Sonido de Maracas", 13, 5));
-            ///Claves
-            orq.AddPerc(new C_PERCUSION_INSTRUMENTOS("No Afinada", "Claves", "Sonido de Claves", 13, 6));
-            ///Caja china
-            orq.AddPerc(new C_PERCUSION_INSTRUMENTOS("No Afinada", "Caja china", "Sonido de Caja china", 13, 7));
-            ///Castañuelas
-            orq.AddPerc(new C_PERCUSION_INSTRUMENTOS("No Afinada", "Castañuelas", "Sonido de Castañuelas", 13, 8));
-            ///Pandereta
-            orq.AddPerc(new C_PERCUSION_INSTRUMENTOS("No Afinada", "Pandereta", "Sonido de Pandereta", 13, 9));
-            ///Bombo
-            orq.AddPerc(new C_PERCUSION_INSTRUMENTOS("No Afinada", "Bombo", "Sonido de Bombo", 13, 10));
-            ///Caja
-            orq.AddPerc(new C_PERCUSION_INSTRUMENTOS("No Afinada", "Caja", "Sonido de Caja", 13, 11));
         }
 
         private void ClrPan1()
@@ -263,7 +169,21 @@ namespace Prg3_Orquesta
 
         private void sonido_btn_Click(object sender, EventArgs e)
         {
-            MessageBox.Show(datos[1]);
+            if (instrumento.GetType().Equals(typeof(C_CUERDA_INSTRUMENTOS)))
+            {
+                C_CUERDA_INSTRUMENTOS c = (C_CUERDA_INSTRUMENTOS)instrumento;
+                c.Sonar();
+            }
+            else if (instrumento.GetType().Equals(typeof(C_PERCUSION_INSTRUMENTOS)))
+            {
+                C_PERCUSION_INSTRUMENTOS p = (C_PERCUSION_INSTRUMENTOS)instrumento;
+                p.Sonar();
+            }
+            else if (instrumento.GetType().Equals(typeof(C_VIENTO_INSTRUMENTOS)))
+            {
+                C_VIENTO_INSTRUMENTOS v = (C_VIENTO_INSTRUMENTOS)instrumento;
+                v.Sonar();
+            }
         }
 
         private void afinar_btn_Click(object sender, EventArgs e)
@@ -298,32 +218,9 @@ namespace Prg3_Orquesta
 
         private void tocarTodosToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            int i = 0;
-            foreach (C_CUERDA_INSTRUMENTOS c in orq.GetListCuerda())
-            {
-                i++;
-                Datos(c.Datos(), c.GetNombreF(), c.GetNombreG());
-                MensajeInstrumento(datos, i);
-            }
-            foreach (C_PERCUSION_INSTRUMENTOS p in orq.GetListPerc())
-            {
-                i++;
-                Datos(p.Datos(), p.GetNombreF(), p.GetNombreG());
-                MensajeInstrumento(datos, i);
-            }
-            foreach (C_VIENTO_INSTRUMENTOS v in orq.GetListViento())
-            {
-                i++;
-                Datos(v.Datos(), v.GetNombreF(), v.GetNombreG());
-                MensajeInstrumento(datos, i);
-            }
-        }
-
-        private void MensajeInstrumento(string[] d,int i)
-        {
-            MessageBox.Show("Instrumento #"+i+System.Environment.NewLine+
-                "Soy el(la) " + d[0] + " Numero #" + d[5] + " de la Posicion " + d[4]+System.Environment.NewLine+
-                "Pertenezco al grupo "+d[6]+" "+d[7]+" de la familia "+d[6]);
+            if (MessageBox.Show("A continuación se tocaran todos los instrumentos", "no se que", System.Windows.Forms.MessageBoxButtons.OKCancel)
+            != DialogResult.Cancel)
+                orq.TocarTodo();
         }
 
         private void Datos(string[] d, string f, string g)

@@ -15,5 +15,11 @@ namespace Prg3_Orquesta
         {
             return this.nombre;
         }
+
+        public override string Tocar()
+        {
+            return base.Tocar() + System.Environment.NewLine 
+                + "Grupo " + this.nombre;
+        }
     }
 }

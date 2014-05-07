@@ -46,7 +46,10 @@ namespace Prg3_Orquesta
             if(intento>5)
                 this.estado=afinacion;
             if (afinacion == estado)
+            {
+                this.afinado = true;
                 return true;
+            }
             this.estado = new Random().Next(10);
             return false;
         }
@@ -56,6 +59,17 @@ namespace Prg3_Orquesta
             if (other.nombre == this.nombre && other.numero == this.numero && other.posicion == this.posicion)
                 return true;
             return false;
+        }
+
+        public new string Tocar()
+        {
+            return "Sonido de un(a) " + this.nombre + " #" + this.numero + " Posición: " + this.posicion + System.Environment.NewLine
+                + "Familia " + base.Tocar();
+        }
+
+        public void Sonar()
+        {
+            System.Windows.Forms.MessageBox.Show("Sonido de " + this.nombre);
         }
     }
 }

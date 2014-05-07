@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(ppl));
             this.menu = new System.Windows.Forms.MenuStrip();
             this.archivo_m = new System.Windows.Forms.ToolStripMenuItem();
             this.salir_sm = new System.Windows.Forms.ToolStripMenuItem();
@@ -103,19 +104,20 @@
             // buscar_sm
             // 
             this.buscar_sm.Name = "buscar_sm";
-            this.buscar_sm.Size = new System.Drawing.Size(152, 22);
+            this.buscar_sm.Size = new System.Drawing.Size(140, 22);
             this.buscar_sm.Text = "Ver";
             this.buscar_sm.Click += new System.EventHandler(this.buscar_sm_Click);
             // 
             // tocarTodosToolStripMenuItem
             // 
             this.tocarTodosToolStripMenuItem.Name = "tocarTodosToolStripMenuItem";
-            this.tocarTodosToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
+            this.tocarTodosToolStripMenuItem.Size = new System.Drawing.Size(140, 22);
             this.tocarTodosToolStripMenuItem.Text = "Tocar Todos";
             this.tocarTodosToolStripMenuItem.Click += new System.EventHandler(this.tocarTodosToolStripMenuItem_Click);
             // 
             // pan1
             // 
+            this.pan1.BackColor = System.Drawing.Color.Transparent;
             this.pan1.Controls.Add(this.num_box);
             this.pan1.Controls.Add(this.label7);
             this.pan1.Controls.Add(this.pos_box);
@@ -135,7 +137,7 @@
             this.pan1.Controls.Add(this.grupo_cbox);
             this.pan1.Controls.Add(this.label1);
             this.pan1.Controls.Add(this.familia_cbox);
-            this.pan1.Location = new System.Drawing.Point(469, 263);
+            this.pan1.Location = new System.Drawing.Point(0, 30);
             this.pan1.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.pan1.Name = "pan1";
             this.pan1.Size = new System.Drawing.Size(668, 295);
@@ -179,9 +181,11 @@
             // estado_lb
             // 
             this.estado_lb.AutoSize = true;
+            this.estado_lb.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.estado_lb.ForeColor = System.Drawing.SystemColors.Info;
             this.estado_lb.Location = new System.Drawing.Point(285, 195);
             this.estado_lb.Name = "estado_lb";
-            this.estado_lb.Size = new System.Drawing.Size(58, 20);
+            this.estado_lb.Size = new System.Drawing.Size(64, 20);
             this.estado_lb.TabIndex = 14;
             this.estado_lb.Text = "estado";
             // 
@@ -218,9 +222,11 @@
             // label6
             // 
             this.label6.AutoSize = true;
-            this.label6.Location = new System.Drawing.Point(24, 163);
+            this.label6.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label6.ForeColor = System.Drawing.SystemColors.Info;
+            this.label6.Location = new System.Drawing.Point(19, 162);
             this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(58, 20);
+            this.label6.Size = new System.Drawing.Size(64, 20);
             this.label6.TabIndex = 10;
             this.label6.Text = "Grupo:";
             // 
@@ -235,9 +241,11 @@
             // label5
             // 
             this.label5.AutoSize = true;
-            this.label5.Location = new System.Drawing.Point(19, 131);
+            this.label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label5.ForeColor = System.Drawing.SystemColors.Info;
+            this.label5.Location = new System.Drawing.Point(14, 130);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(63, 20);
+            this.label5.Size = new System.Drawing.Size(71, 20);
             this.label5.TabIndex = 8;
             this.label5.Text = "Familia:";
             // 
@@ -252,39 +260,45 @@
             // label4
             // 
             this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(13, 195);
+            this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label4.ForeColor = System.Drawing.SystemColors.Info;
+            this.label4.Location = new System.Drawing.Point(8, 194);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(69, 20);
+            this.label4.Size = new System.Drawing.Size(76, 20);
             this.label4.TabIndex = 6;
             this.label4.Text = "Nombre:";
             // 
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(83, 84);
+            this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label3.ForeColor = System.Drawing.SystemColors.Info;
+            this.label3.Location = new System.Drawing.Point(95, 84);
             this.label3.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(197, 20);
+            this.label3.Size = new System.Drawing.Size(223, 20);
             this.label3.TabIndex = 5;
             this.label3.Text = "Seleccione el Instrumento:";
             // 
             // instru_cbox
             // 
             this.instru_cbox.FormattingEnabled = true;
-            this.instru_cbox.Location = new System.Drawing.Point(288, 81);
+            this.instru_cbox.Location = new System.Drawing.Point(326, 81);
             this.instru_cbox.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.instru_cbox.Name = "instru_cbox";
-            this.instru_cbox.Size = new System.Drawing.Size(371, 28);
+            this.instru_cbox.Size = new System.Drawing.Size(333, 28);
             this.instru_cbox.TabIndex = 4;
             this.instru_cbox.SelectedIndexChanged += new System.EventHandler(this.instru_cbox_SelectedIndexChanged);
             // 
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(9, 46);
+            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label2.ForeColor = System.Drawing.SystemColors.Info;
+            this.label2.Location = new System.Drawing.Point(11, 46);
             this.label2.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(271, 20);
+            this.label2.Size = new System.Drawing.Size(307, 20);
             this.label2.TabIndex = 3;
             this.label2.Text = "Seleccione el Grupo del Instrumento:";
             // 
@@ -293,20 +307,22 @@
             this.grupo_cbox.FormattingEnabled = true;
             this.grupo_cbox.Items.AddRange(new object[] {
             "Todos"});
-            this.grupo_cbox.Location = new System.Drawing.Point(288, 43);
+            this.grupo_cbox.Location = new System.Drawing.Point(326, 43);
             this.grupo_cbox.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.grupo_cbox.Name = "grupo_cbox";
-            this.grupo_cbox.Size = new System.Drawing.Size(371, 28);
+            this.grupo_cbox.Size = new System.Drawing.Size(333, 28);
             this.grupo_cbox.TabIndex = 2;
             this.grupo_cbox.SelectedIndexChanged += new System.EventHandler(this.grupo_cbox_SelectedIndexChanged);
             // 
             // label1
             // 
             this.label1.AutoSize = true;
+            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.ForeColor = System.Drawing.SystemColors.Info;
             this.label1.Location = new System.Drawing.Point(4, 8);
             this.label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(276, 20);
+            this.label1.Size = new System.Drawing.Size(314, 20);
             this.label1.TabIndex = 1;
             this.label1.Text = "Seleccione la Familia del Instrumento:";
             // 
@@ -317,30 +333,34 @@
             "Cuerda",
             "Viento",
             "Percución"});
-            this.familia_cbox.Location = new System.Drawing.Point(288, 5);
+            this.familia_cbox.Location = new System.Drawing.Point(326, 5);
             this.familia_cbox.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.familia_cbox.Name = "familia_cbox";
-            this.familia_cbox.Size = new System.Drawing.Size(371, 28);
+            this.familia_cbox.Size = new System.Drawing.Size(333, 28);
             this.familia_cbox.TabIndex = 0;
             this.familia_cbox.SelectedIndexChanged += new System.EventHandler(this.familia_cbox_SelectedIndexChanged);
             // 
             // pan2
             // 
+            this.pan2.BackColor = System.Drawing.Color.Transparent;
             this.pan2.Controls.Add(this.label13);
             this.pan2.Controls.Add(this.label12);
             this.pan2.Controls.Add(this.label11);
             this.pan2.Controls.Add(this.label10);
             this.pan2.Controls.Add(this.label9);
-            this.pan2.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.pan2.Location = new System.Drawing.Point(0, 25);
+            this.pan2.Location = new System.Drawing.Point(0, 333);
             this.pan2.Name = "pan2";
             this.pan2.Size = new System.Drawing.Size(668, 385);
             this.pan2.TabIndex = 2;
             // 
             // label13
             // 
+            this.label13.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)
+                        | System.Windows.Forms.AnchorStyles.Left)
+                        | System.Windows.Forms.AnchorStyles.Right)));
             this.label13.AutoSize = true;
             this.label13.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label13.ForeColor = System.Drawing.SystemColors.Window;
             this.label13.Location = new System.Drawing.Point(200, 338);
             this.label13.Name = "label13";
             this.label13.Size = new System.Drawing.Size(268, 29);
@@ -349,8 +369,12 @@
             // 
             // label12
             // 
+            this.label12.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)
+                        | System.Windows.Forms.AnchorStyles.Left)
+                        | System.Windows.Forms.AnchorStyles.Right)));
             this.label12.AutoSize = true;
             this.label12.Font = new System.Drawing.Font("Microsoft Sans Serif", 48F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label12.ForeColor = System.Drawing.SystemColors.Window;
             this.label12.Location = new System.Drawing.Point(197, 237);
             this.label12.Name = "label12";
             this.label12.Size = new System.Drawing.Size(275, 73);
@@ -359,8 +383,12 @@
             // 
             // label11
             // 
+            this.label11.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)
+                        | System.Windows.Forms.AnchorStyles.Left)
+                        | System.Windows.Forms.AnchorStyles.Right)));
             this.label11.AutoSize = true;
             this.label11.Font = new System.Drawing.Font("Microsoft Sans Serif", 48F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label11.ForeColor = System.Drawing.SystemColors.Window;
             this.label11.Location = new System.Drawing.Point(277, 164);
             this.label11.Name = "label11";
             this.label11.Size = new System.Drawing.Size(114, 73);
@@ -369,8 +397,12 @@
             // 
             // label10
             // 
+            this.label10.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)
+                        | System.Windows.Forms.AnchorStyles.Left)
+                        | System.Windows.Forms.AnchorStyles.Right)));
             this.label10.AutoSize = true;
             this.label10.Font = new System.Drawing.Font("Microsoft Sans Serif", 48F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label10.ForeColor = System.Drawing.SystemColors.Window;
             this.label10.Location = new System.Drawing.Point(135, 91);
             this.label10.Name = "label10";
             this.label10.Size = new System.Drawing.Size(399, 73);
@@ -379,8 +411,12 @@
             // 
             // label9
             // 
+            this.label9.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)
+                        | System.Windows.Forms.AnchorStyles.Left)
+                        | System.Windows.Forms.AnchorStyles.Right)));
             this.label9.AutoSize = true;
             this.label9.Font = new System.Drawing.Font("Microsoft Sans Serif", 48F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label9.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
             this.label9.Location = new System.Drawing.Point(186, 18);
             this.label9.Name = "label9";
             this.label9.Size = new System.Drawing.Size(297, 73);
@@ -392,6 +428,7 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.Window;
+            this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
             this.ClientSize = new System.Drawing.Size(668, 410);
             this.Controls.Add(this.pan2);
             this.Controls.Add(this.pan1);
